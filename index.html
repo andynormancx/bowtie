@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>bowtie - simple knockout binding inspection (alpha)</title>
+		<link rel="stylesheet" type="text/css" href="res/site.css" />
+	</head>
+	<body>
+		<div id="content">
+			<h1><strong>bowtie</strong> is a simple inspector for knockout bindings.</h1>
+			<p>knockout is a great tool for model binding, but a lack of developer tool support for proper syntax highlighting can make picking out <strong>what's bound to what</strong> very difficult, especially in complex views.</p>
+			<p>bowtie is a simple bookmarklet that you drag onto your browser bookmark bar that will let you <strong>inspect bound elements with a single click</strong> and view their bindings. it will also let you <strong>watch the values of an element's bindings</strong>, whether they're simple observables or complex computed values.</p>
+			<p>to use bowtie, simply drag the below button onto your browser's bookmark bar. when you want to use it on a page, <strong>simply click the shortcut</strong>. hover any element with a knockout data binding and you'll see an hourglass. click it to view all the bindings that element has. if you'd like to watch the value of a binding, simply click 'watch.' that's all there is.</p>
+
+			<div id="bookmark-button">
+				<a href="javascript: (function () { var scriptTag = document.createElement('script'); scriptTag.setAttribute('src', 'http://bowtie-ko.com/app/bowtie.js'); var linkTag = document.createElement('link');  linkTag.setAttribute('href', 'http://bowtie-ko.com//app/bowtie.css');  linkTag.setAttribute('rel','stylesheet');  document.body.appendChild(scriptTag); document.body.appendChild(linkTag); })();">launch bowtie</a>
+			</div>
+
+		</div>
+		<div id="disclaimer">
+			Copyright &copy; 2012 Max Pollack. All disclaimers are pretty much BS.
+		</div>
+	</body>
+</html>

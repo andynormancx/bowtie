@@ -1,0 +1,185 @@
+/*div.bowtie-popup {
+
+	position: absolute;
+	padding: 5px;
+	background-color: #333;
+	border-radius: 5px;
+	opacity: 80%;
+	color: #ddd;
+	font-family: Georgia, serif;
+	font-size: 14px;
+	z-index: 2000;
+
+}
+
+div.bowtie-popup div {
+
+	padding: 10px;
+	font-size: 12px;
+
+}
+
+div.bowtie-popup table {
+
+	width: 100%;
+	border-spacing: 2px;
+
+}
+
+div.bowtie-popup table tr {
+
+	border-spacing: 2px;
+
+}
+
+div.bowtie-popup table tbody tr td {
+
+	background-color: #222;
+	padding: 4px 10px 4px 10px;
+	vertical-align: top;
+	border-spacing: 2px;
+
+}
+
+div.bowtie-popup table tbody tr td.key {
+
+	font-weight: bold;
+
+}*/
+
+div.bowtie-inspect-icon
+{
+	width: 16px;
+	height: 16px;
+	background: url('inspect.png');
+	position: absolute;
+	cursor: pointer;
+}
+
+div.bowtie-inspector
+{
+	height: 0px;
+
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+
+	background-color: #333;
+
+	z-index: 10000;
+
+	font-family: Georgia, serif;
+	font-size: 14px;
+}
+
+div.bowtie-object-inspector
+{
+	position: fixed;
+	bottom: 210px;
+	right: 10px;
+	border-radius: 3px;
+	padding: 4px;
+
+	background-color: #333;
+
+	z-index: 10000;
+
+	font-family: Georgia, serif;
+	font-size: 14px;
+}
+
+div.bowtie-inspector a {
+
+	font-style: italic;
+	color: #eee;
+	text-decoration: underline;
+	font-size: 12px;
+
+}
+
+div.bowtie-inspector div.title-bar
+{
+	padding: 4px;
+	border-bottom: 1px solid #777;
+	
+	color: #666;
+	font-size: 12px;
+
+	height: 16px;
+}
+
+div.bowtie-inspector div.panel
+{
+	overflow-y: scroll;
+	width: 49.9%;
+	border-right: 1px solid #ccc;
+	position: relative;
+	float: left;
+	height: 175px;
+	text-align: right;
+}
+
+div.bowtie-inspector div.panel span
+{
+	color: #eee;
+}
+
+div.bowtie-inspector div.panel table,
+div.bowtie-object-inspector table {
+
+	width: 100%;
+	border-spacing: 2px;
+	color: #ddd;
+	text-align: left;
+
+}
+
+div.bowtie-inspector div.panel table tr,
+div.bowtie-object-inspector table tr {
+
+	border-spacing: 2px;
+	border-top: 1px dotted #777;
+
+}
+
+div.bowtie-inspector div.panel table tr.first-row,
+div.bowtie-object-inspector table tr.first-row {
+
+	border-top: none;
+
+}
+
+
+div.bowtie-inspector div.panel table tbody tr td.watch-cell,
+div.bowtie-object-inspector table tbody tr td.watch-cell {
+
+	width: 40px;
+
+}
+
+div.bowtie-inspector div.panel table tbody tr td,
+div.bowtie-object-inspector table tbody tr td {
+
+	background-color: #222;
+	padding: 4px 10px 4px 10px;
+	vertical-align: top;
+	border-spacing: 2px;
+
+}
+
+div.bowtie-inspector div.panel table tbody tr td[colspan],
+div.bowtie-object-inspector table tbody tr td[colspan] {
+
+	padding: 4px 0px 4px 10px;
+
+}
+
+div.bowtie-inspector div.panel table tbody tr td.key,
+div.bowtie-object-inspector table tbody tr td.key {
+
+	font-weight: bold;
+	border-right: 1px dotted #777;
+	max-width: 40%;
+	min-width: 180px;
+}
